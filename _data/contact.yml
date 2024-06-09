@@ -2,9 +2,11 @@
 
 - type: github
   icon: "fab fa-github"
+  url:  "https://github.com/yuyi-hao"
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
+  url:  "https://twitter.com/nil"
 
 - type: email
   icon: "fas fa-envelope"
@@ -13,6 +15,7 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+  
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
