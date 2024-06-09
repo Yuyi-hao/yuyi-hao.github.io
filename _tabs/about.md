@@ -19,7 +19,7 @@ This site exists to showcase my whole identity in a single place. Think of it as
 - **Contact:** Want to get in touch? There’s a form for that. Whether you have a question, a comment, or just want to say hi, feel free to drop a message.
 
 <p style="text-aline:center;">
-  <img src="/assets/img/hi-wave.gif" />
+  <img alt="wave gif" src="/assets/img/hi-wave.gif" />
 </p>
 
 Thanks for stopping by. Enjoy exploring the site!
