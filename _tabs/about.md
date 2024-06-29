@@ -18,9 +18,9 @@ This site exists to showcase my whole identity in a single place. Think of it as
 - **Learning and Tricks:** Occasional posts about what I’m learning and little tricks I’ve picked up along the way. From tech tips to random hacks, it’s all here.
 - **Contact:** Want to get in touch? There’s a form for that. Whether you have a question, a comment, or just want to say hi, feel free to drop a message.
 
-<p style="text-aline:center;">
+<center>
   <img alt="wave gif" src="/assets/img/hi-wave.gif" />
-</p>
+</center>
 
 Thanks for stopping by. Enjoy exploring the site!
 
