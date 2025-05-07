@@ -1,0 +1,24 @@
+#  project data for listing in project card
+
+- name: Ghibli Translation
+  slug: ghibli-translation
+  description: A CycleGAN model to turn real life images into Ghibli-style art.
+  tags: ["python", "PyTorch", "ghibli", "machine learning"]
+  repo: https://github.com/Yuyi-hao/cycle-gan
+  live_link: ""
+  license: MIT
+  last_updated: ""
+  status: "WIP"
+  image: "/assets/project_imgs/ghibli-translation/demo.png"
+  # github stats later
+
+- name: Pomodoro
+  slug: pomodoro
+  description: A web based pomodoro you can use for 25min of work and 5 min of break
+  tags: ["HTML", "CSS", "JavaScript"]
+  repo: https://github.com/Yuyi-hao/pomodoro
+  live_link: https://yuyi-hao.github.io/pomodoro/
+  license: "MIT"
+  last_updated: "last month"
+  status: "Completed"
+  image: https://raw.githubusercontent.com/Yuyi-hao/pomodoro/refs/heads/main/media/demo.png

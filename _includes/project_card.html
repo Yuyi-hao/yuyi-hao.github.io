@@ -1,0 +1,26 @@
+<div class="post-preview card h-80">
+    <div class="card-body">
+        {% if project.image %}
+            <img src="{{ project.image }}" alt="project image" class="img-fluid mb-3">
+        {% endif %}
+        <h4 class="pt-0 my-2">{{ project.name }}</h4>
+        <div class="text-muted">
+            <p>{{ project.description }}</p>
+        </div>
+        <time>Aug 10, 2019</time>
+        <div>
+            {% for tag in project.tags %}
+                <span class="badge bg-secondary me-1">{{ tag }}</span>
+            {% endfor %}
+        </div>
+        <div class="small text-muted mb-2">
+            <strong>Status:</strong> {{ project.status }}<br>
+            <strong>Updated:</strong> {{ project.last_updated }}
+        </div>
+        <a href="{{ project.repo }}">Repo</a>
+        {% if project.live_link %}
+            <a href="{{ project.live_link }}">Live</a>
+        {% endif %}
+        <p class="small mt-2">License: {{ project.license }}</p>
+    </div>
+</div>
