@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blogs
+title: Blogs
 icon: fas fa-blog
 order: 2
 ---
