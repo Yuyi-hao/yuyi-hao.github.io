@@ -1,6 +1,6 @@
 ---
 layout: default
-title: PROJECTS
+title: Projects
 icon: fas fa-briefcase
 order: 2
 ---
@@ -19,20 +19,6 @@ order: 2
     </div>
 </div>
 
-
-
-
-
-
-
-1. Cycle-gan <python ml torch ghibli>
-2. Pomodoro <html css js>
-3. clock-using-js <html css js>
-4. snog0 <go, raylib>
-5. Checker <python raylib>
-6. wordflow <python flask html css js>
-7. Memory Game <python pygame>
-8. cat-extension <chrome extension js css>
 9. simple-js-site <html css js>
 10. Fiblock <>
 11. Game of life 

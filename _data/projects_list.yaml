@@ -7,7 +7,7 @@
   repo: https://github.com/Yuyi-hao/cycle-gan
   live_link: ""
   license: MIT
-  last_updated: ""
+  last_updated: "last month"
   status: "WIP"
   image: ""
   # github stats later
@@ -22,3 +22,69 @@
   last_updated: "last month"
   status: "Completed"
   image: https://raw.githubusercontent.com/Yuyi-hao/pomodoro/refs/heads/main/media/demo.png
+
+- name: Analog Clock
+  slug: analog-clock-js
+  description: Analog clock using html css and js
+  tags: ["HTML", "CSS", "JavaScript"]
+  repo: https://github.com/Yuyi-hao/clock-using-js
+  live_link: https://yuyi-hao.github.io/clock-using-js/
+  license: "MIT"
+  last_updated: 09 May, 2025
+  status: "Completed"
+  image: "https://raw.githubusercontent.com/Yuyi-hao/clock-using-js/refs/heads/main/demo.png"
+
+- name: Snog0 
+  slug: snog0
+  description: Classic snake game using go and raylib 
+  tags: ["Go", "raylib"]
+  repo: https://github.com/Yuyi-hao/snog0
+  live_link: ""
+  license: "MIT"
+  last_updated: 25 Jun, 2024
+  status: "Completed"
+  image: ""
+
+- name: Checker 
+  slug: checker
+  description: Checker game built using raylib and python
+  tags: ["python", "raylib"]
+  repo: https://github.com/Yuyi-hao/checker
+  live_link: ""
+  license: "MIT"
+  last_updated: 28 May, 2024
+  status: "Completed"
+  image: ""
+
+- name: Wordflow
+  slug: wordflow
+  description: A autocomplete suggestion for word using trie data structure
+  tags: ["python", "flask", "graphviz"]
+  repo: https://github.com/Yuyi-hao/wordflow
+  live_link: ""
+  license: "MIT"
+  last_updated: 17 Jan, 2024
+  status: "Completed"
+  image: "https://raw.githubusercontent.com/Yuyi-hao/wordflow/refs/heads/main/data/demo_files/demo2.png"
+
+- name: Memory Game
+  slug: memory-game
+  description: A memory based game. Where you need to match the same card.
+  tags: ["python", "pygame"]
+  repo: https://github.com/Yuyi-hao/memory_game
+  live_link: ""
+  license: ""
+  last_updated: 5 Jan, 2024
+  status: "Completed"
+  image: ""
+
+- name: Cat Extension
+  slug: cat-extension
+  description: A chrome extension. A cat will always accompany you at the corner of page.
+  tags: ["chrome-extension", "html", "Js", "css"]
+  repo: https://github.com/Yuyi-hao/cat-extension
+  live_link: ""
+  license: "MIT"
+  last_updated: 16 Dec, 2023
+  status: "Completed"
+  image: "https://raw.githubusercontent.com/Yuyi-hao/cat-extension/refs/heads/main/images/demo/demo_ss.png"
