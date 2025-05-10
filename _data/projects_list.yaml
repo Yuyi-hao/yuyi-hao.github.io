@@ -88,3 +88,38 @@
   last_updated: 16 Dec, 2023
   status: "Completed"
   image: "https://raw.githubusercontent.com/Yuyi-hao/cat-extension/refs/heads/main/images/demo/demo_ss.png"
+
+- name: Fiblock
+  slug: fiblock
+  description: An implementation of fibonacci clock.
+  tags: ["raylib", "python"]
+  repo: https://github.com/Yuyi-hao/fiblock
+  live_link: ""
+  license: "MIT"
+  last_updated: 1 Aug, 2023
+  status: "Completed"
+  image: "https://raw.githubusercontent.com/Yuyi-hao/fiblock/refs/heads/main/demo_pics/main_page.png"
+
+- name: Game of Life
+  slug: game-of-life
+  description: Simulation of game of life.
+  tags: ["tkinter", "python"]
+  repo: https://github.com/Yuyi-hao/game-of-life
+  live_link: ""
+  license: "MIT"
+  last_updated: 2 Jul, 2023
+  status: "Completed"
+  image: "https://raw.githubusercontent.com/Yuyi-hao/game-of-life/refs/heads/main/demo.png"
+
+- name: Polyrythemic sound
+  slug: polyrythemic-sound
+  description: A beautiful simulation of polyrythemic animation and sound.
+  tags: ["tkinter", "python"]
+  repo: https://github.com/Yuyi-hao/polyrythemic-sound
+  live_link: ""
+  license: "MIT"
+  last_updated: 28 Jun, 2023
+  status: "Completed"
+  image: ""
+
+
