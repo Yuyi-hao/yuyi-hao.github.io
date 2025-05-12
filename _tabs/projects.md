@@ -20,9 +20,6 @@ order: 2
 </div>
 
 9. simple-js-site <html css js>
-10. Fiblock <>
-11. Game of life 
-12. Polyrythemic sound <python tkinter>
 13. breakout <zig sdl>
 14. hide-info-png
 15. Todo-cli
