@@ -122,4 +122,26 @@
   status: "Completed"
   image: ""
 
+- name: Breakout
+  slug: breakout
+  description: Breakout Game.
+  tags: ["sdl", "zig"]
+  repo: https://github.com/Yuyi-hao/breakout
+  live_link: ""
+  license: "MIT"
+  last_updated: 5 Jun, 2023
+  status: "Completed"
+  image: "https://raw.githubusercontent.com/Yuyi-hao/breakout/refs/heads/main/screenshot.png"
+
+- name: Stenography
+  slug: hide-info-png
+  description: An example of Stenography, hiding information into image file.
+  tags: ["c"]
+  repo: https://github.com/Yuyi-hao/hide-info-png
+  live_link: ""
+  license: "MIT"
+  last_updated: 12 Mar, 2023
+  status: "Completed"
+  image: ""
+
 
