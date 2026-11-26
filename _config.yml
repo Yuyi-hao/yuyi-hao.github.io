@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: "Yuyi Hao" # the main title
+title: "Aadhar Kumar" # the main title
 
 tagline: "Personal portfolio" # it will display as the sub-title
 
@@ -34,15 +34,15 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: "Yuyi hao"
-  email: example@domain.com # change to your email address
+  name: "Aadhar Kumar"
+  email: aadhar.kumar.id@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    # - https://twitter.com/username # change to your twitter homepage
     - https://github.com/yuyi-hao # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/aadhar-kumar-27759225a
 
 # Site Verification Settings
 webmaster_verifications:
@@ -96,7 +96,8 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "assets/img/profile_img-1.jpg"
+avatar: "assets/img/profile-pic.png"
+# previous: "assets/img/profile_img-1.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
