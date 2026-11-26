@@ -1,0 +1,44 @@
+# Practice / coursework repositories, listed compactly at the bottom of the Projects page.
+
+- name: CSES Problem Set
+  repo: https://github.com/Yuyi-hao/CSES-problemset
+  note: Python
+- name: Advent of Code 2023
+  repo: https://github.com/Yuyi-hao/aoc2023
+  note: Python
+- name: Data Structures in C
+  repo: https://github.com/Yuyi-hao/DSA
+  note: C
+- name: Computer Science Subjects
+  repo: https://github.com/Yuyi-hao/Learning-computer-science-subjects
+  note: C
+- name: Network Programming
+  repo: https://github.com/Yuyi-hao/network-learn-C
+  note: C / UNIX
+- name: C Practice
+  repo: https://github.com/Yuyi-hao/C-Pratice
+  note: C
+- name: How to Design Programs
+  repo: https://github.com/Yuyi-hao/racket-lrn
+  note: Racket
+- name: Oracle Certification Courses
+  repo: https://github.com/Yuyi-hao/Orcale-certificate-courses
+  note: Jupyter
+- name: Intro to Programming Using Python (solutions)
+  repo: https://github.com/Yuyi-hao/python-book-solution-
+  note: Python
+- name: Single-page JS Sites
+  repo: https://github.com/Yuyi-hao/simple-js-site
+  note: HTML / JS
+- name: CSS Daily Practice
+  repo: https://github.com/Yuyi-hao/css-daily-practice
+  note: CSS
+- name: Sudoku Solver
+  repo: https://github.com/Yuyi-hao/Sudoku_solver
+  note: Python
+- name: Tic-Tac-Toe
+  repo: https://github.com/Yuyi-hao/Tic-Tac-Toe
+  note: Python
+- name: Hangman
+  repo: https://github.com/Yuyi-hao/Hangman
+  note: Python

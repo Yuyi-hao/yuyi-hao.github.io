@@ -1,147 +1,565 @@
-#  project data for listing in project card
+# Project data for the Projects, Extensions and Home pages.
+#
+# Fields
+#   category:     id from _data/project_categories.yaml
+#   featured:     true -> shown on the home page (keep it to three)
+#   status:       Completed | Live | Active | WIP   (leave empty if unknown)
+#   links:        optional extra links, e.g. a separate backend repo
+#   download:     direct download link (used by extensions)
+#   empty strings / missing fields are simply not rendered
 
-- name: Ghibli Translation
-  slug: ghibli-translation
-  description: A CycleGAN model to turn real life images into Ghibli-style art.
-  tags: ["python", "PyTorch", "ghibli", "machine learning"]
-  repo: https://github.com/Yuyi-hao/cycle-gan
+# ---------------------------------------------------------------- organization
+- name: UMLForge
+  slug: umlforge
+  category: organization
+  featured: true
+  description: >-
+    Sketch UML class and use-case diagrams by hand and get them checked
+    against OOP principles and UML rules as you draw. Split into a web
+    frontend, a backend API and an AI service that generates and reviews
+    diagrams.
+  tags: ["JavaScript", "Python", "AI", "Docker"]
+  stack: JavaScript · Python · AI service · Docker
+  repo: https://github.com/UMLforge
+  live_link: https://umlforge.github.io/
+  links:
+    - name: Frontend
+      url: https://github.com/UMLforge/umlforge.github.io
+    - name: Backend API
+      url: https://github.com/UMLforge/backend-api
+    - name: AI Service
+      url: https://github.com/UMLforge/ai-service
+  license: ""
+  last_updated: Nov 2026
+  status: Active
+  image: ""
+
+# ---------------------------------------------------------------- web apps
+- name: Tsundre Ride
+  slug: tsundre-ride
+  category: web-apps
+  featured: true
+  description: >-
+    A browser IDE for timed frontend coding challenges. Open a challenge
+    link, write HTML/CSS/JS in Monaco, see a live multi-page preview and
+    submit, with no install and no sign-up.
+  tags: ["TypeScript", "Monaco", "Django", "DRF", "PostgreSQL", "Redis", "MinIO"]
+  stack: TypeScript · Monaco · Django REST Framework · PostgreSQL · Redis · MinIO
+  repo: https://github.com/Yuyi-hao/tsundre-ride
+  live_link: https://yuyi-hao.github.io/tsundre-ride/
+  links:
+    - name: Backend
+      url: https://github.com/Yuyi-hao/tsundre-ride-backend
+  license: ""
+  last_updated: Nov 2026
+  status: Live
+  image: ""
+
+- name: Dayracker
+  slug: dayracker
+  category: web-apps
+  description: >-
+    A personal activity and journaling app for tracking activities, sleep,
+    diary entries and monthly summaries, with support for custom trackers.
+  tags: ["Python", "Flask", "JavaScript"]
+  repo: https://github.com/Yuyi-hao/dayracker
+  live_link: ""
+  links:
+    - name: Video demo
+      url: https://youtu.be/UqW1yUiJS7s
+  license: ""
+  last_updated: Jan 2026
+  status: Completed
+  image: ""
+
+- name: Col-Doc
+  slug: col-doc
+  category: web-apps
+  description: An application that lets you dump and share small docs.
+  tags: ["JavaScript", "Python"]
+  repo: https://github.com/Yuyi-hao/col-doc-frontend
+  live_link: https://col-doc.vercel.app
+  links:
+    - name: Backend
+      url: https://github.com/Yuyi-hao/col-doc-backend
+  license: ""
+  last_updated: Feb 2025
+  status: Live
+  image: ""
+
+- name: Jeanote
+  slug: jeanote
+  category: web-apps
+  description: A simple note app with an Express.js backend.
+  tags: ["JavaScript", "Express"]
+  repo: https://github.com/Yuyi-hao/jeanote-frontend
+  live_link: ""
+  links:
+    - name: Backend
+      url: https://github.com/Yuyi-hao/jeanote-backend
+  license: ""
+  last_updated: Jun 2025
+  status: ""
+  image: ""
+
+- name: Vendor Management System
+  slug: vendor-management-system
+  category: web-apps
+  description: >-
+    Vendor profiles, purchase order tracking and vendor performance metrics,
+    built as a REST API.
+  tags: ["Python", "Django", "DRF"]
+  repo: https://github.com/Yuyi-hao/vendor_managment_system
+  live_link: ""
+  license: MIT-0
+  last_updated: May 2024
+  status: Completed
+  image: ""
+
+- name: Love Spy
+  slug: love-spy
+  category: web-apps
+  description: An app that lets you set reminders for your loved ones.
+  tags: ["Python", "Django", "DRF"]
+  repo: https://github.com/Yuyi-hao/love-spy
   live_link: ""
   license: MIT
-  last_updated: "last month"
-  status: "WIP"
+  last_updated: Oct 2024
+  status: ""
   image: ""
-  # github stats later
+
+- name: Resume Analyzer
+  slug: resume-analyzer
+  category: web-apps
+  description: An AI-powered resume reviewer.
+  tags: ["JavaScript", "AI"]
+  repo: https://github.com/Yuyi-hao/resume-analyzer
+  live_link: ""
+  license: ""
+  last_updated: Jul 2025
+  status: ""
+  image: ""
+
+- name: Muslay
+  slug: muslay
+  category: web-apps
+  description: A music player.
+  tags: ["Python", "TypeScript"]
+  repo: https://github.com/Yuyi-hao/muslay
+  live_link: ""
+  license: MIT
+  last_updated: Jul 2025
+  status: ""
+  image: ""
+
+- name: OCR API
+  slug: ocr-fastapi
+  category: web-apps
+  description: An OCR service exposed through FastAPI.
+  tags: ["Python", "FastAPI"]
+  repo: https://github.com/Yuyi-hao/ocr-fastapi
+  live_link: ""
+  license: ""
+  last_updated: Jan 2025
+  status: ""
+  image: ""
+
+- name: HabitQuill
+  slug: habitquill
+  category: web-apps
+  description: A simple web app that lets you track your day and daily activity.
+  tags: ["Python"]
+  repo: https://github.com/Yuyi-hao/HabitQuill
+  live_link: ""
+  license: ""
+  last_updated: Jul 2025
+  status: WIP
+  image: ""
+
+- name: Petbros
+  slug: petbros
+  category: web-apps
+  description: >-
+    Find someone to take care of your pet while you are on vacation, or
+    put your pet in day care.
+  tags: ["Python"]
+  repo: https://github.com/Yuyi-hao/petbros
+  live_link: ""
+  license: ""
+  last_updated: Nov 2024
+  status: WIP
+  image: ""
+
+# ---------------------------------------------------------------- browser tools
+- name: Webideo
+  slug: web-based-video-tool
+  category: web-tools
+  featured: true
+  description: >-
+    A purely client-side video tool. FFmpeg compiled to WebAssembly runs
+    in the browser, so your files never leave your machine.
+  tags: ["JavaScript", "FFmpeg", "WebAssembly"]
+  stack: JavaScript · FFmpeg · WebAssembly
+  repo: https://github.com/Yuyi-hao/web-based-video-tool
+  live_link: https://yuyi-hao.github.io/web-based-video-tool/
+  license: MIT
+  last_updated: Sep 2026
+  status: Live
+  image: ""
 
 - name: Pomodoro
   slug: pomodoro
-  description: A web based pomodoro you can use for 25min of work and 5 min of break
+  category: web-tools
+  description: A web-based pomodoro timer for 25 minutes of work and 5 minutes of break.
   tags: ["HTML", "CSS", "JavaScript"]
   repo: https://github.com/Yuyi-hao/pomodoro
   live_link: https://yuyi-hao.github.io/pomodoro/
-  license: "MIT"
-  last_updated: "last month"
-  status: "Completed"
+  license: MIT
+  last_updated: Sep 2025
+  status: Completed
   image: https://raw.githubusercontent.com/Yuyi-hao/pomodoro/refs/heads/main/media/demo.png
+
+- name: Stopwatch
+  slug: stopwatch
+  category: web-tools
+  description: A simple stopwatch built with Next.js.
+  tags: ["TypeScript", "Next.js"]
+  repo: https://github.com/Yuyi-hao/stopwatch
+  live_link: https://yuyi-hao.github.io/stopwatch/
+  license: MIT
+  last_updated: Jun 2025
+  status: Completed
+  image: ""
 
 - name: Analog Clock
   slug: analog-clock-js
-  description: Analog clock using html css and js
+  category: web-tools
+  description: Analog and digital clock using HTML, CSS and JavaScript.
   tags: ["HTML", "CSS", "JavaScript"]
   repo: https://github.com/Yuyi-hao/clock-using-js
   live_link: https://yuyi-hao.github.io/clock-using-js/
-  license: "MIT"
-  last_updated: 09 May, 2025
-  status: "Completed"
-  image: "https://raw.githubusercontent.com/Yuyi-hao/clock-using-js/refs/heads/main/demo.png"
+  license: MIT
+  last_updated: May 2025
+  status: Completed
+  image: https://raw.githubusercontent.com/Yuyi-hao/clock-using-js/refs/heads/main/demo.png
 
-- name: Snog0 
+- name: Fontrot
+  slug: fontrot
+  category: web-tools
+  description: A site for making your own font. Currently works as a whiteboard where you can save your art.
+  tags: ["JavaScript"]
+  repo: https://github.com/Yuyi-hao/fontrot
+  live_link: https://yuyi-hao.github.io/fontrot/
+  license: ""
+  last_updated: Jun 2025
+  status: WIP
+  image: https://raw.githubusercontent.com/Yuyi-hao/fontrot/refs/heads/main/assets/demo/demo.png
+
+- name: YouTube History Analyzer
+  slug: yt-history-analyzer
+  category: web-tools
+  description: Analyze your YouTube watch history.
+  tags: ["HTML", "JavaScript"]
+  repo: https://github.com/Yuyi-hao/YtHistoryAnalyzer
+  live_link: ""
+  license: ""
+  last_updated: ""
+  status: ""
+  image: ""
+
+# ---------------------------------------------------------------- games
+- name: Princess Jump
+  slug: princess-jump
+  category: games
+  description: A browser game where you jump to avoid getting killed by a knight.
+  tags: ["JavaScript", "Canvas"]
+  repo: https://github.com/Yuyi-hao/Princess-Jump
+  live_link: https://yuyi-hao.github.io/Princess-Jump/
+  license: ""
+  last_updated: Jun 2025
+  status: Live
+  image: ""
+
+- name: Snog0
   slug: snog0
-  description: Classic snake game using go and raylib 
+  category: games
+  description: Classic snake game using Go and raylib.
   tags: ["Go", "raylib"]
   repo: https://github.com/Yuyi-hao/snog0
   live_link: ""
-  license: "MIT"
-  last_updated: 25 Jun, 2024
-  status: "Completed"
+  license: MIT
+  last_updated: Jun 2024
+  status: Completed
   image: ""
 
-- name: Checker 
+- name: Checker
   slug: checker
-  description: Checker game built using raylib and python
-  tags: ["python", "raylib"]
+  category: games
+  description: Checkers game built using raylib and Python.
+  tags: ["Python", "raylib"]
   repo: https://github.com/Yuyi-hao/checker
   live_link: ""
-  license: "MIT"
-  last_updated: 28 May, 2024
-  status: "Completed"
-  image: ""
-
-- name: Wordflow
-  slug: wordflow
-  description: A autocomplete suggestion for word using trie data structure
-  tags: ["python", "flask", "graphviz"]
-  repo: https://github.com/Yuyi-hao/wordflow
-  live_link: ""
-  license: "MIT"
-  last_updated: 17 Jan, 2024
-  status: "Completed"
-  image: "https://raw.githubusercontent.com/Yuyi-hao/wordflow/refs/heads/main/data/demo_files/demo2.png"
+  license: MIT
+  last_updated: May 2024
+  status: Completed
+  image: /assets/blog-data/img/2024-06-09-checker-game/demo-1.png
 
 - name: Memory Game
   slug: memory-game
-  description: A memory based game. Where you need to match the same card.
-  tags: ["python", "pygame"]
+  category: games
+  description: A memory game where you match identical cards.
+  tags: ["Python", "pygame"]
   repo: https://github.com/Yuyi-hao/memory_game
   live_link: ""
   license: ""
-  last_updated: 5 Jan, 2024
-  status: "Completed"
-  image: ""
-
-- name: Cat Extension
-  slug: cat-extension
-  description: A chrome extension. A cat will always accompany you at the corner of page.
-  tags: ["chrome-extension", "html", "Js", "css"]
-  repo: https://github.com/Yuyi-hao/cat-extension
-  live_link: ""
-  license: "MIT"
-  last_updated: 16 Dec, 2023
-  status: "Completed"
-  image: "https://raw.githubusercontent.com/Yuyi-hao/cat-extension/refs/heads/main/images/demo/demo_ss.png"
-
-- name: Fiblock
-  slug: fiblock
-  description: An implementation of fibonacci clock.
-  tags: ["raylib", "python"]
-  repo: https://github.com/Yuyi-hao/fiblock
-  live_link: ""
-  license: "MIT"
-  last_updated: 1 Aug, 2023
-  status: "Completed"
-  image: "https://raw.githubusercontent.com/Yuyi-hao/fiblock/refs/heads/main/demo_pics/main_page.png"
-
-- name: Game of Life
-  slug: game-of-life
-  description: Simulation of game of life.
-  tags: ["tkinter", "python"]
-  repo: https://github.com/Yuyi-hao/game-of-life
-  live_link: ""
-  license: "MIT"
-  last_updated: 2 Jul, 2023
-  status: "Completed"
-  image: "https://raw.githubusercontent.com/Yuyi-hao/game-of-life/refs/heads/main/demo.png"
-
-- name: Polyrythemic sound
-  slug: polyrythemic-sound
-  description: A beautiful simulation of polyrythemic animation and sound.
-  tags: ["tkinter", "python"]
-  repo: https://github.com/Yuyi-hao/polyrythemic-sound
-  live_link: ""
-  license: "MIT"
-  last_updated: 28 Jun, 2023
-  status: "Completed"
+  last_updated: Jan 2024
+  status: Completed
   image: ""
 
 - name: Breakout
   slug: breakout
-  description: Breakout Game.
-  tags: ["sdl", "zig"]
+  category: games
+  description: Breakout game in Zig using SDL2.
+  tags: ["Zig", "SDL2"]
   repo: https://github.com/Yuyi-hao/breakout
   live_link: ""
-  license: "MIT"
-  last_updated: 5 Jun, 2023
-  status: "Completed"
-  image: "https://raw.githubusercontent.com/Yuyi-hao/breakout/refs/heads/main/screenshot.png"
+  license: MIT
+  last_updated: Jun 2023
+  status: Completed
+  image: https://raw.githubusercontent.com/Yuyi-hao/breakout/refs/heads/main/screenshot.png
 
-- name: Stenography
-  slug: hide-info-png
-  description: An example of Stenography, hiding information into image file.
-  tags: ["c"]
-  repo: https://github.com/Yuyi-hao/hide-info-png
+- name: Alien Invasion
+  slug: alien-invasion
+  category: games
+  description: A space shooter built with pygame.
+  tags: ["Python", "pygame"]
+  repo: https://github.com/Yuyi-hao/alien-invansion
   live_link: ""
-  license: "MIT"
-  last_updated: 12 Mar, 2023
-  status: "Completed"
+  license: ""
+  last_updated: Feb 2023
+  status: ""
   image: ""
 
+- name: Space War
+  slug: space-war
+  category: games
+  description: A simple two-player space game.
+  tags: ["Python"]
+  repo: https://github.com/Yuyi-hao/space-war
+  live_link: ""
+  license: ""
+  last_updated: ""
+  status: ""
+  image: ""
 
+# ---------------------------------------------------------------- simulations
+- name: Thread Art
+  slug: thread-art
+  category: simulations
+  description: Turns an uploaded image into thread art, right in the browser.
+  tags: ["JavaScript", "Canvas"]
+  repo: https://github.com/Yuyi-hao/Thread-art
+  live_link: https://yuyi-hao.github.io/Thread-art/
+  license: ""
+  last_updated: Sep 2025
+  status: Live
+  image: ""
+
+- name: Image Dithering
+  slug: image-dithering
+  category: simulations
+  description: An implementation of the Floyd–Steinberg dithering algorithm.
+  tags: ["JavaScript", "Canvas"]
+  repo: https://github.com/Yuyi-hao/image-dithering
+  live_link: https://yuyi-hao.github.io/image-dithering/
+  license: MIT
+  last_updated: Aug 2025
+  status: Completed
+  image: ""
+
+- name: Animal Walk
+  slug: animal-walk
+  category: simulations
+  description: Procedural walk animation.
+  tags: ["TypeScript", "Canvas"]
+  repo: https://github.com/Yuyi-hao/animal-walk
+  live_link: https://yuyi-hao.github.io/animal-walk/
+  license: ""
+  last_updated: May 2025
+  status: Live
+  image: ""
+
+- name: Game of Life
+  slug: game-of-life
+  category: simulations
+  description: Conway's Game of Life simulation in Python Tkinter.
+  tags: ["Python", "Tkinter"]
+  repo: https://github.com/Yuyi-hao/game-of-life
+  live_link: ""
+  license: MIT
+  last_updated: Jul 2023
+  status: Completed
+  image: https://raw.githubusercontent.com/Yuyi-hao/game-of-life/refs/heads/main/demo.png
+
+- name: Fiblock
+  slug: fiblock
+  category: simulations
+  description: A Fibonacci clock simulation (5-minute intervals).
+  tags: ["Python", "raylib"]
+  repo: https://github.com/Yuyi-hao/fiblock
+  live_link: ""
+  license: MIT
+  last_updated: Aug 2023
+  status: Completed
+  image: https://raw.githubusercontent.com/Yuyi-hao/fiblock/refs/heads/main/demo_pics/main_page.png
+
+- name: Polyrhythmic Sound
+  slug: polyrythemic-sound
+  category: simulations
+  description: A simulation of polyrhythmic animation and sound.
+  tags: ["Python", "Tkinter"]
+  repo: https://github.com/Yuyi-hao/polyrythemic-sound
+  live_link: ""
+  license: MIT
+  last_updated: Jun 2023
+  status: Completed
+  image: ""
+
+# ---------------------------------------------------------------- machine learning
+- name: Audio CNN
+  slug: audio-cnn
+  category: machine-learning
+  description: Classifies sounds with a convolutional neural network, served through a Flask API with a React frontend.
+  tags: ["Python", "CNN", "Flask", "React"]
+  repo: https://github.com/Yuyi-hao/audio-cnn
+  live_link: https://audio-cnn-neko.vercel.app
+  license: ""
+  last_updated: Jul 2025
+  status: Live
+  image: ""
+
+- name: Ghibli Translation
+  slug: ghibli-translation
+  category: machine-learning
+  description: A CycleGAN model that turns real-life images into Ghibli-style art.
+  tags: ["Python", "PyTorch", "CycleGAN"]
+  repo: https://github.com/Yuyi-hao/cycle-gan
+  live_link: ""
+  license: MIT
+  last_updated: May 2025
+  status: WIP
+  image: ""
+
+- name: Handwritten Digit Recognition
+  slug: hand-written-digit-recognition
+  category: machine-learning
+  description: Handwritten digit recognition.
+  tags: ["Machine Learning"]
+  repo: https://github.com/Yuyi-hao/Hand-Written-Digit-Recognition
+  live_link: ""
+  license: ""
+  last_updated: ""
+  status: ""
+  image: ""
+
+# ---------------------------------------------------------------- systems / languages / cli
+- name: Yapper
+  slug: yapper
+  category: systems
+  description: A simple programming language for basic coding projects, also usable as a calculator.
+  tags: ["Python", "Interpreter"]
+  repo: https://github.com/Yuyi-hao/yapper
+  live_link: ""
+  license: MIT
+  last_updated: Jun 2026
+  status: ""
+  image: ""
+
+- name: LaTeX Compiler
+  slug: latex-compiler
+  category: systems
+  description: A simple LaTeX compiler built with Yacc and Lex.
+  tags: ["C", "Yacc", "Lex"]
+  repo: https://github.com/Yuyi-hao/LaTeX-compiler
+  live_link: ""
+  license: ""
+  last_updated: Apr 2023
+  status: Completed
+  image: ""
+
+- name: Xreenchot
+  slug: xreenchot
+  category: systems
+  description: An X11 application for taking screenshots.
+  tags: ["C", "X11"]
+  repo: https://github.com/Yuyi-hao/xreenchot
+  live_link: ""
+  license: MIT
+  last_updated: Sep 2024
+  status: ""
+  image: ""
+
+- name: Steganography
+  slug: hide-info-png
+  category: systems
+  description: Hides information inside a PNG image file.
+  tags: ["C"]
+  repo: https://github.com/Yuyi-hao/hide-info-png
+  live_link: ""
+  license: MIT
+  last_updated: Mar 2023
+  status: Completed
+  image: ""
+
+- name: Wordflow
+  slug: wordflow
+  category: systems
+  description: Word autocomplete suggestions using a trie data structure.
+  tags: ["Python", "Flask", "Graphviz"]
+  repo: https://github.com/Yuyi-hao/wordflow
+  live_link: ""
+  license: MIT
+  last_updated: Jan 2024
+  status: Completed
+  image: https://raw.githubusercontent.com/Yuyi-hao/wordflow/refs/heads/main/data/demo_files/demo2.png
+
+- name: Todo CLI
+  slug: todo-cli
+  category: systems
+  description: A command-line todo manager.
+  tags: ["Python", "CLI"]
+  repo: https://github.com/Yuyi-hao/todo-cli
+  live_link: ""
+  license: ""
+  last_updated: ""
+  status: ""
+  image: ""
+
+- name: Password Generator
+  slug: password-generator
+  category: systems
+  description: A password generator you can call from the command line.
+  tags: ["Python", "CLI"]
+  repo: https://github.com/Yuyi-hao/password-generator
+  live_link: ""
+  license: ""
+  last_updated: ""
+  status: ""
+  image: ""
+
+# ---------------------------------------------------------------- extensions
+- name: Cute Pet
+  slug: cat-extension
+  category: extensions
+  description: >-
+    A Chrome extension that puts a cute pet GIF in the bottom-left corner
+    of every page. The pet changes every 5 seconds.
+  tags: ["Chrome Extension", "JavaScript", "HTML", "CSS"]
+  repo: https://github.com/Yuyi-hao/cat-extension
+  download: https://github.com/Yuyi-hao/cat-extension/archive/refs/heads/main.zip
+  browser: Chrome / Chromium (Edge, Brave, Opera)
+  live_link: ""
+  license: MIT
+  last_updated: Dec 2023
+  status: Completed
+  image: https://raw.githubusercontent.com/Yuyi-hao/cat-extension/refs/heads/main/images/demo/demo_ss.png

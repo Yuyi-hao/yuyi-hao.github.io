@@ -1,38 +1,41 @@
 ---
-layout: default
+layout: page
 title: Projects
 icon: fas fa-briefcase
-order: 2
+order: 1
 ---
 
-# Projects
+Everything I've built, grouped by type. Jump to:
+{% for cat in site.data.project_categories -%}
+{%- assign count = site.data.projects_list | where: "category", cat.id | size -%}
+{%- if count > 0 %} [{{ cat.name }}](#{{ cat.id }}){% unless forloop.last %} ·{% endunless %}{% endif -%}
+{%- endfor %} · [Learning & Practice](#learning)
 
-<div class="container-fluid px-0">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-2 g-4 mb-4">
-        {% for project in site.data.projects_list %}
-            <div class="col">
-                {% include project_card.html
-                    project=project
-                %}
-            </div>
-        {% endfor %}
-    </div>
+{% for cat in site.data.project_categories %}
+{% assign items = site.data.projects_list | where: "category", cat.id %}
+{% if items.size > 0 %}
+<h2 id="{{ cat.id }}" class="mt-5"><i class="{{ cat.icon }} fa-fw me-1"></i> {{ cat.name }}</h2>
+<p class="text-muted">{{ cat.description }}{% if cat.id == "extensions" %} <a href="{{ '/extensions/' | relative_url }}">Go to downloads →</a>{% endif %}</p>
+
+<div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+  {% for project in items %}
+  <div class="col">
+    {% include project_card.html project=project %}
+  </div>
+  {% endfor %}
 </div>
+{% endif %}
+{% endfor %}
 
-9. simple-js-site <html css js>
-15. Todo-cli
-16. password-generator
-17. ytHistoryAnalyzer 
-18. Login-Form css
-19. hand-written-digit recogination
-20. colorfinerhexcode
-21. card-order-summary 
-22. Speed test gui
-23. Random recipices
-24. Python-book solution 
-25. sudoku_solver
-26. Hangman 
-27. Tic-Tac-Toe
-28. digital-clock
-29. space-war
-30. joke-generator
+<h2 id="learning" class="mt-5"><i class="fas fa-book fa-fw me-1"></i> Learning &amp; Practice</h2>
+<p class="text-muted">Coursework, exercises and problem sets.</p>
+
+<ul>
+{% for r in site.data.learning_repos %}
+  <li><a href="{{ r.repo }}" target="_blank" rel="noopener noreferrer">{{ r.name }}</a> <span class="text-muted small">· {{ r.note }}</span></li>
+{% endfor %}
+</ul>
+
+<p class="mt-4">
+  More on <a href="https://github.com/yuyi-hao?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub →</a>
+</p>

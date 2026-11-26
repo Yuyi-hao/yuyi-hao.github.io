@@ -1,0 +1,42 @@
+# Order and labels of the sections on the Projects page.
+# `id` must match the `category` field used in projects_list.yaml.
+
+- id: organization
+  name: Organization Projects
+  icon: fas fa-users
+  description: Projects built and maintained under a GitHub organization.
+
+- id: web-apps
+  name: Web Apps & Full-Stack
+  icon: fas fa-server
+  description: Applications with a backend, database and API.
+
+- id: web-tools
+  name: Browser Tools
+  icon: fas fa-globe
+  description: Small client-side tools that run entirely in the browser.
+
+- id: games
+  name: Games
+  icon: fas fa-gamepad
+  description: Games built with raylib, pygame, SDL and plain JavaScript.
+
+- id: simulations
+  name: Simulations & Graphics
+  icon: fas fa-shapes
+  description: Visual experiments, algorithms and procedural animation.
+
+- id: machine-learning
+  name: Machine Learning
+  icon: fas fa-brain
+  description: Models and experiments with PyTorch.
+
+- id: systems
+  name: Systems, Languages & CLI
+  icon: fas fa-terminal
+  description: Compilers, interpreters, low-level C programs and command-line tools.
+
+- id: extensions
+  name: Extensions
+  icon: fas fa-puzzle-piece
+  description: Browser extensions. See the Extensions page to download them.
